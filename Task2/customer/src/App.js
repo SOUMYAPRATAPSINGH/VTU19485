@@ -26,7 +26,7 @@ const App = () => {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const res = await axios.post(http://localhost:8000/product, { category });
+      const res = await axios.post("http://localhost:8000/", { category });
       setProducts(res.data); // Assuming res.data is an array of products
     } catch (error) {
       console.error('Error fetching products:', error);
